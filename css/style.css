@@ -110,7 +110,7 @@ section:first-of-type {
 /* Hero Section */
 .home-hero {
   display: flex;
-  gap: 28px;
+  gap: 40px;
   align-items: flex-start;
 }
 
@@ -119,14 +119,13 @@ section:first-of-type {
 }
 
 .home-photo img {
-  width: 180px;
+  width: 190px;
   display: block;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .home-info {
-  flex: 1;
-  min-width: 0;
+  padding-top: 8px;  
 }
 
 .home-info h1 {
