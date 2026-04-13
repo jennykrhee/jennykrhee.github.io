@@ -100,6 +100,10 @@ nav {
   color: var(--color-accent);
 }
 
+.body {
+  background: pink !important;
+}
+
 section {
   margin-top: 80px;
 }
