@@ -115,8 +115,9 @@ section:first-of-type {
 }
 
 .home-photo {
-  margin-top: 55px;
   flex: 0 0 180px;
+  /* margin-top: 55px; */
+  transform: translateY(50px);
 }
 
 .home-photo img {
