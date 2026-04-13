@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  max-width: 880px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 60px 24px;
 }
@@ -110,13 +110,23 @@ section:first-of-type {
 /* Hero Section */
 .home-hero {
   display: flex;
-  gap: 40px;
+  gap: 28px;
   align-items: flex-start;
 }
 
+.home-photo {
+  flex: 0 0 180px;
+}
+
 .home-photo img {
-  width: 200px;
+  width: 180px;
+  display: block;
   border-radius: 6px;
+}
+
+.home-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .home-info h1 {
