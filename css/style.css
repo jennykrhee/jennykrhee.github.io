@@ -339,29 +339,29 @@ footer a:hover {
 
 .project-card {
   position: relative;
-
   padding: 18px 18px 16px;
-
   border: 1px solid var(--color-border-soft);
   border-radius: 14px;
-
   background: var(--color-surface-muted);
   cursor: pointer;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-
-
 }
-
 .project-card:hover {
   transform: translateY(-3px);
   border-color: #C9D2D8;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
-
+.project-card.disabled {
+  cursor: default;
+}
+.project-card.disabled:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--color-border-soft);
+}
 .project-card:focus {
   outline: none;
 }
-
 .project-card:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
