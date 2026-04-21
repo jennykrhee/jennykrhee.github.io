@@ -136,21 +136,29 @@ h1, h2, h3 {
 
 .home-info h1 {
   margin-top: 0;
-  margin-bottom: 5px;
-  font-weight: 500;
+  margin-bottom: 6px;
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;   /* tighter horizontal spacing */
+  line-height: 1.05;
   color: var(--color-accent-strong);
 }
-
+.title,
+.affiliation {
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--color-text-muted);
+}
 .title {
   margin: 0;
   font-size: 18px;
+  margin-bottom: 2px;
 }
-
 .affiliation {
-  margin: 4px 0 12px;
-  color: var(--color-text-muted);
+  margin: 0 0 14px;
 }
-
 .job-market {
   margin-top: 10px;
   font-weight: 500;
@@ -179,14 +187,13 @@ h1, h2, h3 {
   display: flex;
   gap: 15px;
 }
-
 .contact-links a {
   text-decoration: none;
-  color: #3F6476;
+  color: var(--color-accent);
   font-weight: 500;
 }
-
 .contact-links a:hover {
+  color: var(--color-accent-strong);
   text-decoration: underline;
 }
 
