@@ -131,26 +131,26 @@ section:first-of-type {
 }
 
 h1, h2, h3 {
-  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .home-info h1 {
   margin-top: 0;
   margin-bottom: 6px;
-  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.03em;   /* tighter horizontal spacing */
   line-height: 1.05;
   color: var(--color-accent-strong);
 }
+
 .title,
 .affiliation {
-  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 1.15;
   color: var(--color-text-muted);
 }
+
 .title {
   margin: 0;
   font-size: 18px;
@@ -399,7 +399,7 @@ footer a:hover {
 
 .project-card h3 {
   margin: 0 0 8px 0;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.35;
   color: var(--color-text);
@@ -564,8 +564,80 @@ footer a:hover {
   opacity: 1;
 }
 
-
-
 body.modal-open {
   overflow: hidden;
+}
+
+.news {
+  margin-top: 42px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.news-panel {
+  margin-top: 14px;
+  max-height: none;
+  overflow: visible;
+  padding-right: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.news-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 10px;
+  padding: 8px 12px;
+  line-height: 1.4;
+  color: var(--color-text);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+
+.news-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+
+.news-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.news-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news-panel::-webkit-scrollbar-thumb {
+  background: #d9d0c4;
+  border-radius: 999px;
+}
+
+.news-panel::-webkit-scrollbar-thumb:hover {
+  background: #c8b9a6;
+}
+
+
+.news-item:hover {
+  border-color: #D8C7B3;
+}
+
+.news-item a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1.5px dashed var(--color-accent);
+  padding-bottom: 0;
+}
+
+.news-item a:hover {
+  color: var(--color-accent-strong);
 }
