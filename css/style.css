@@ -117,6 +117,9 @@ section:first-of-type {
 .home-photo {
   flex: 0 0 160px;
   transform: translateY(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home-photo img {
@@ -132,6 +135,12 @@ section:first-of-type {
 
 h1, h2, h3 {
   font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+h2 {
+  color: var(--color-muted);
+  font-weight: 500;
+  position: relative;
 }
 
 .home-info h1 {
@@ -399,8 +408,8 @@ footer a:hover {
 
 .project-card h3 {
   margin: 0 0 8px 0;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.35;
   color: var(--color-text);
 }
