@@ -359,18 +359,14 @@ footer a:hover {
 }
 
 .project-card {
+  position: relative;
+  padding: 18px 18px 16px;
   border: 1px solid var(--color-border-soft);
-  border-radius: 18px;
-  background: white;
-}
-
-.project-topline {
-  color: var(--color-accent);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-  margin-bottom: 6px;
+  border-radius: 14px;
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: inset 4px 0 0 var(--color-accent);
 }
 
 .project-card:hover {
@@ -395,9 +391,13 @@ footer a:hover {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
 }
-
-
-
+.project-topline {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 6px;
+}
 .project-authors {
   font-size: 13px;
   line-height: 1.45;
