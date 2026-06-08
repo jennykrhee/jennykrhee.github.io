@@ -12,8 +12,8 @@
   --color-text-subtle: #9A9AA7; /* gray */
 
   /* Accent */
-  --color-accent: #983A33; /* burgundy */
-  --color-accent-strong: #7F2E29;
+  --color-accent: #5F7595; /* dusty blue */
+  --color-accent-strong: #4E6484; /* terracotta */
 
   /* Borders */
   --color-border: #E5D9C8; /* soft beige */
@@ -359,15 +359,20 @@ footer a:hover {
 }
 
 .project-card {
-  position: relative;
-  padding: 18px 18px 16px;
   border: 1px solid var(--color-border-soft);
-  border-radius: 14px;
-  background: var(--color-surface);
-  cursor: pointer;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: inset 4px 0 0 var(--color-accent);
+  border-radius: 18px;
+  background: white;
 }
+
+.project-topline {
+  color: var(--color-accent);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 6px;
+}
+
 .project-card:hover {
   transform: translateY(-3px);
   border-color: #D8C7B3;
@@ -391,13 +396,7 @@ footer a:hover {
   outline-offset: 3px;
 }
 
-.project-topline {
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-  margin-bottom: 6px;
-}
+
 
 .project-authors {
   font-size: 13px;
