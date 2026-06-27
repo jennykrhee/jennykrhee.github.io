@@ -189,10 +189,13 @@
 
 
 <!-- News -->
+
 <section class="news fade-in" id="news" style="animation-delay: 0.1s;">
   <h2>Recent News</h2>
 
   <div class="news-list">
+
+    <!-- Always visible -->
 
     <div class="news-item">
       <div class="news-date">Nov 2026</div>
@@ -201,6 +204,13 @@
         <a href="https://meetings.informs.org/wordpress/annual/" target="_blank">
           INFORMS Annual Meeting
         </a>.
+      </div>
+    </div>
+
+	<div class="news-item">
+      <div class="news-date">Aug 2026</div>
+      <div class="news-text">
+        📚 I will be teaching CIS 308 Advanced Excel in Business during Fall 2026 at Arizona State University.
       </div>
     </div>
 
@@ -221,37 +231,41 @@
         <a href="https://docs.google.com/document/d/17JxEjjcWonciHCqz4W6uE7zC8GpWSr_G1X8rMfqsYN0/edit?usp=sharing" target="_blank">
           CIS 315
         </a>
-        during Summer 2026 at Arizona State University.
+        during Summer 2026.
       </div>
     </div>
 
-    <div class="news-item">
-      <div class="news-date">Apr 2026</div>
-      <div class="news-text">
-        🏅 I received an Honorable Mention for the ASU
-        <a href="https://www.linkedin.com/company/asufwa/" target="_blank">
-          Faculty Women's Association
-        </a>
-        Research Award for Graduate Students.
-      </div>
-    </div>
+    <!-- Hidden section -->
 
-    <div class="news-item">
-      <div class="news-date">Apr 2026</div>
-      <div class="news-text">
+    <div class="news-hidden" id="olderNews">
+
+      <div class="news-item">
+        <div class="news-date">Apr 2026</div>
+        <div class="news-text">
+        🏅 I received an Honorable Mention for the ASU Faculty Women's Association Research Award.
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">Apr 2026</div>
+        <div class="news-text">
         🚀 I launched my academic website.
+        </div>
       </div>
+
     </div>
 
   </div>
+
+  <button class="news-toggle" id="newsToggle">
+    Show older news ↓
+  </button>
+
 </section>
 	   
 
-
-
-
-  </div>
-</main>
+  <!-- </div>
+</main> -->
 
 <!-- Footer -->
 <footer>
@@ -346,5 +360,21 @@
   });
 </script>
 
+<script>
+const toggle = document.getElementById("newsToggle");
+const olderNews = document.getElementById("olderNews");
+
+toggle.addEventListener("click", () => {
+
+    olderNews.classList.toggle("open");
+
+    if (olderNews.classList.contains("open")) {
+        toggle.textContent = "Hide older news ↑";
+    } else {
+        toggle.textContent = "Show older news ↓";
+    }
+
+});
+</script>
 </body>
 </html>
