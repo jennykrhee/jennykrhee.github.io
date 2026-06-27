@@ -621,3 +621,26 @@ body.modal-open {
 .news-text a:hover {
     color: var(--color-accent-strong);
 }
+
+.news-hidden {
+    display: none;
+}
+
+.news-hidden.open {
+    display: block;
+}
+
+.news-toggle {
+    margin-top: 16px;
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.news-toggle:hover {
+    color: var(--color-accent-strong);
+}
