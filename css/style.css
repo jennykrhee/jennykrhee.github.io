@@ -2,9 +2,9 @@
   --section-spacing: 64px;
 
   /* Base */
-  --color-bg: #FAF8F5; /* warm ivory */
+  --color-bg: #FFFFFF; /* white */
   --color-surface: #FFFFFF;
-  --color-surface-muted: #F7F4F0;
+  --color-surface-muted: #FAFAFA;
 
   /* Text */
   --color-text: #2F3142; /* charcoal */
@@ -16,9 +16,9 @@
   --color-accent-strong: #4E6484; /* terracotta */
 
   /* Borders */
-  --color-border: #E5D9C8; /* soft beige */
-  --color-border-soft: #EFE6DA; /* milk beige */
-  --color-border-subtle: #EFE6DA;
+  --color-border: #E5E7EB; /* light grayish blue */
+  --color-border-soft: #EFE6DA; /* light cyan blue */
+  --color-border-subtle: #ECEEF2; /* light cyan blue */
 
   /* Effects */
   --color-overlay: rgba(0, 0, 0, 0.35);
@@ -361,12 +361,12 @@ footer a:hover {
 .project-card {
   position: relative;
   padding: 18px 18px 16px;
-  border: 1px solid var(--color-border-soft);
+  border: 1px solid #E5E7EB;
   border-radius: 14px;
   background: var(--color-surface);
   cursor: pointer;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: inset 4px 0 0 var(--color-accent);
+  box-shadow: none;
 }
 
 .project-card:hover {
