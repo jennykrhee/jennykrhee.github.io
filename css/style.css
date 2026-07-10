@@ -393,34 +393,11 @@ footer a:hover {
 }
 
 .project-topline {
-  margin-bottom: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.project-journal {
-  font-size: 13px;
+  font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-accent-strong);
-  line-height: 1.1;
-}
-
-.project-status {
-  display: inline-flex;
-  width: fit-content;
-  align-items: center;
-  padding: 4px 9px;
-  border-radius: 999px;
-  background: rgba(95, 117, 149, 0.10);
-  color: var(--color-accent-strong);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  line-height: 1;
+  color: var(--color-accent);
 }
 
 .project-authors {
@@ -429,7 +406,6 @@ footer a:hover {
   color: var(--color-text-muted);
   margin-bottom: 4px;
 }
-
 
 .project-card h3 {
   margin: 0 0 10px 0;
