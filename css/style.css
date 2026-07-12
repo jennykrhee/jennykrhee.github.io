@@ -31,10 +31,12 @@ body {
   background-color: var(--color-bg);
   padding-top: 70px;
 }
+
 .container {
-  width: min(740px, calc(100% - 48px));
+  width: min(900px, calc(100% - 80px));
   margin: 0 auto;
-  padding: 60px 24px;
+  /* padding: 60px 24px; */
+  padding: 64px 0;
 }
 
 
@@ -62,12 +64,12 @@ nav {
 }
 
 .nav-inner {
-  width: min(740px, calc(100% - 40px));
+  width: min(900px, calc(100% - 80px));
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 18px 0;
 }
 
 .nav-brand {
