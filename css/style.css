@@ -411,7 +411,14 @@ footer a:hover {
   margin-bottom: 4px;
 }
 
-.project-authors a:hover {
+.project-authors a {
+  all: unset;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-authors a:hover,
+.project-authors a:focus {
   color: var(--color-accent);
   text-decoration: underline;
 }
