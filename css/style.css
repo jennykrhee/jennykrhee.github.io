@@ -406,7 +406,18 @@ footer a:hover {
   font-size: 13px;
   line-height: 1.45;
   color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
   margin-bottom: 4px;
+}
+
+.project-authors a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.project-authors strong {
+  font-weight: 700;
 }
 
 .project-card h3 {
