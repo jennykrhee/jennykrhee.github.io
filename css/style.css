@@ -26,10 +26,13 @@
 
 body {
   margin: 0;
-  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;*/ 
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--color-text);
   background-color: var(--color-bg);
   padding-top: 70px;
+  font-weight: 400;
 }
 
 .container {
@@ -135,8 +138,8 @@ section:first-of-type {
   padding-top: 8px;  
 }
 
-h1, h2, h3 {
-  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+h1,h2,h3,h4,h5,h6 {
+    font-family: inherit;
 }
 
 h2 {
