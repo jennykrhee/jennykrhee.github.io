@@ -41,13 +41,13 @@
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="nav-brand">Kyuyeon (Jenny) Rhee</a>
-    <ul class="nav-links">
+<!--    <ul class="nav-links">
       <li><a href="index.html">About</a></li>
 	  <li><a href="cv.html">CV</a></li>
 	  <li><a href="#education">Education</a></li>
 	  <li><a href="#research">Selected Work</a></li>
 	  <li><a href="#news">News</a></li>
-    </ul>
+    </ul> -->
   </div>
 </nav>
 
@@ -56,52 +56,87 @@
 <main class="page-content">
   <div class="container">
 
-    <!-- About -->
-    <section class="home-hero fade-in" id="about">
-
-      <div class="home-photo">
-        <img src="rhee_headshot.jpg" alt="headshot" />
-
-        <div class="contact-links">
-	  <a href="mailto:krhee1@asu.edu" target="_blank" aria-label="Email">
-    	  <i class="fa-regular fa-envelope"></i>
-    	  <span>Email</span>
-  	  </a>
-	  <a href="https://www.linkedin.com/in/kyuyeon-jenny-rhee/" target="_blank" aria-label="LinkedIn">
-    	  <i class="fa-brands fa-linkedin-in"></i>
-    	  <span>LinkedIn</span>
-  	  </a>
-        </div>
-      </div>
-
-      <div class="home-info">
-        <h1>Kyuyeon (Jenny) Rhee</h1>
-        <p class="title">Ph.D. Candidate in Information Systems</p>
-        <p class="affiliation">W. P. Carey School of Business, Arizona State University</p>
 
 
+<!-- About -->
+<section class="home-layout fade-in" id="about">
 
-	<!-- <div class="topic-chips">
-	  <span class="chip">Digital Health</span>
-	  <span class="chip">Healthcare Innovation</span>
-	  <span class="chip">Privacy Regulation</span>
-	</div> -->
+  <div class="home-photo">
+    <img src="rhee_headshot.jpg" alt="headshot" />
 
-        <p class="bio">Hi, I’m Jenny. I am a Ph.D. candidate (ABD) in Information Systems at Arizona State University.<br><strong>I will be on the academic job market in 2026–2027.</strong></p>
-		  
-        <p class="bio">
-			My research examines how digital technologies and regulation influence healthcare delivery, clinical operations, and innovation. In particular, I study telehealth delivery models, provider workload in hybrid care systems, and privacy regulation in clinical trial design.
-        </p>
+    <div class="contact-links">
+      <a href="mailto:krhee1@asu.edu" aria-label="Email">
+        <i class="fa-regular fa-envelope"></i>
+        <span>Email</span>
+      </a>
 
-        <p class="contact-note">I can be reached at krhee1 [at] asu.edu. Questions or collaboration inquiries are welcome!
-        </p>
+      <a href="https://www.linkedin.com/in/kyuyeon-jenny-rhee/"
+         target="_blank"
+         aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <span>LinkedIn</span>
+      </a>
+    </div>
+  </div>
 
-      </div>
-     </section>
+  <div class="home-main">
 
-     <hr class="section-divider">
+    <div class="home-info">
+      <h1>Kyuyeon (Jenny) Rhee</h1>
+      <p class="title">Ph.D. Candidate in Information Systems</p>
+      <p class="affiliation">
+        W. P. Carey School of Business, Arizona State University
+      </p>
 
-   <!-- Education -->
+      <p class="committee">
+        Dissertation Committee:
+        <strong>Pei-yu Chen (Chair)</strong>, Xiao Liu, Tan Lekwijit, Tian Lu
+      </p>
+
+      <p class="job-market">
+        2026–2027 Academic Job Market Candidate
+      </p>
+    </div>
+
+    <div class="bio">
+
+      <p>
+        <strong>Hi, I’m Jenny!</strong>
+      </p>
+
+      <p>
+        Digital technologies promise to transform healthcare, but their effects depend on how they are implemented within real organizations and regulatory environments. A question that motivates much of my research is why technological potential does not always translate into realized impact.
+      </p>
+
+      <p>
+        My current work explores this question in the contexts of
+        <strong>telehealth and data regulation</strong>.
+        More recently, I have begun exploring how
+        <strong>AI is changing healthcare organizations</strong>
+        and how its growing reliance on data is reshaping the generation, governance, and use of data. I am excited to continue developing this emerging stream of research.
+      </p>
+
+      <p>
+        Methodologically, I draw on
+        <strong>causal inference and computational methods</strong>,
+        including machine learning, large language models, and simulation.
+      </p>
+
+      <p>
+        I always enjoy exchanging ideas with researchers and practitioners, and I welcome questions, conversations, and new collaborations!
+        Feel free to reach out at krhee1 [at] asu.edu.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+   <!-- Education 
    <section class="education fade-in" id="education" style="animation-delay: 0.15s;">
 
    	<h2>Education</h2>
@@ -130,190 +165,254 @@
 	  <div class="edu-year">2018</div>
 	</div>
    </section>
-   <hr class="section-divider">
+   <hr class="section-divider"> -->
 
 
    <!--Selected Work-->
 
-   <section class="selected-work fade-in" id="research" style="animation-delay: 0.3s;">
-	<h2>Selected Work</h2>
+<section class="selected-work fade-in" id="research">
+  <h2>Research</h2>
 
-	<div class="project-grid">
-	
-	  <article 
-	    class="project-card"
-	    tabindex="0"
-	    role="button"
-	    data-topline="Conditionally Accepted · Information Systems Research"
-	    data-title="Technology-Mediated Services in Health Care: Evaluating Telehealth Delivery Models for Underserved Populations"
-	    data-authors="K. Rhee, X. Liu, S. Lekwijit, P. Chen"
-	    data-venue="Presented at INFORMS 2023 · WISE 2022"
-	    data-abstract="This study examines how telehealth delivery models affect access to care and protocol adherence in underserved populations. While prior research reports mixed evidence on telehealth’s effectiveness, we argue that these inconsistencies arise because telehealth is not a single intervention but implemented through distinct service configurations that address different barriers. Drawing on the theoretical framework of digital economics, we conceptualize telehealth as a technology-mediated service that can reshape key economic frictions, including search and verification, transportation, tracking, and setup costs. We focus on two widely adopted models—specialist-facilitated telehealth and remote telehealth—and theorize that each addresses different subsets of these frictions, leading to distinct effects on care access and protocol adherence across settings. Using panel data from U.S. Community Health Centers (CHCs) on mental health services, we document three findings. First, adoption of the specialist-facilitated model increases access to mental health care, measured by patients served and total visits, particularly in areas with greater clinical need. Second, remote telehealth does not, on average, increase access but does improve adherence to standardized depression screening and follow-up protocols. These gains reflect more reliable screening and documentation rather than increased utilization. Third, the effects of both models vary across locations characterized by different frictions. Specialist-facilitated telehealth is most effective where search and verification frictions are high; remote telehealth is limited where patient-side setup costs are high, but more effective where transportation barriers and documentation frictions are greater. These findings advance a model-specific perspective on telehealth’s effects, extend the digital economics framework to technology-mediated services, and demonstrate that the effectiveness of digital health interventions depends on how delivery models interact with underlying cost environments."
-	  >
+  <div class="research-list">
 
-		<div class="project-topline">
-			<span class="project-meta">
-    		Information Systems Research, Conditionally Accepted
-  			</span>
-		</div>
+    <!-- Paper 1 -->
 
-	    <h3>
-			Technology-Mediated Services in Health Care: Evaluating Telehealth Delivery Models for Underserved Populations
-		</h3>
+    <article class="research-card featured">
 
-		<div class="project-authors">
-  			<strong>Kyuyeon (Jenny) Rhee</strong>,
-  			<a href="https://search.asu.edu/profile/3518572" target="_blank">Xiao Liu</a>,
-  			<a href="https://tanlekwijit.com/" target="_blank">Tan Lekwijit</a>,
-  			<a href="https://search.asu.edu/profile/2217544" target="_blank">Pei-yu Chen</a>
-		</div>
+      <h3>
+        Technology-Mediated Services in Health Care: Evaluating Telehealth Delivery Models for Underserved Populations
+      </h3>
 
-		<p class="project-venue">
-			Presented at WISE 2022 · INFORMS 2023
-		</p>
-<div class="project-hint">→</div>
-	  </article>
-
-	  <article 
-	    class="project-card"
-	    tabindex="0"
-	    role="button"
-	    data-topline="In preparation for submission to Management Science"
-	    data-title="More Virtual Care, More Pressure? The Impact of Centralized Telehealth Implementation on In-Person Provider Workload"
-	    data-authors="Kyuyeon (Jenny) Rhee, Tan Lekwijit, Xiao Liu, Pei-yu Chen"
-	    data-venue="Presented at WISE 2024 · CHITA 2024"
-	    data-abstract="Telehealth is often introduced with the expectation that it will alleviate pressure on in-person care. In practice, however, it may reorganize how clinical work is generated and distributed across providers. Prior research suggests that video visits increase downstream utilization, yet their implications for provider workload remain poorly understood, particularly in settings where telehealth is delivered by a separate care team. We examine how telehealth affects in-person provider workload along three dimensions: volume, variability, and complexity. We analyze data from a large health system that introduced a centralized telehealth program staffed by a dedicated virtual care team, in which in-person providers are indirectly exposed through changes in their patient panels’ care-seeking behavior. Guided by a queuing-based framework, we conceptualize telehealth as a front-end entry point that reshapes arrivals to the in-person care queue and estimate causal effects using a two-stage least squares approach exploiting variation in telehealth eligibility. We find that telehealth reorganizes in-person provider workload. First, telehealth exposure increases in-person visit volume. Second, it alters the temporal structure of demand by increasing the likelihood of capacity exceedance and concentrating demand in high-load periods. Third, telehealth shifts the composition of in-person care toward higher-comorbidity patients without increasing visit-level service intensity. These findings show that telehealth does not simply substitute for in-person care or uniformly increase workload. Instead, it reconfigures patient flows across channels, increasing volume, concentrating demand in peak periods, and shifting case mix toward more complex patients, with implications for capacity planning and workforce management in hybrid care delivery systems."
-	  >
-	    <div class="project-topline">
-  			In preparation for submission to Management Science
-		</div>
-
-	    <h3>
-			More Virtual Care, More Pressure? The Impact of Centralized Telehealth Implementation on In-Person Provider Workload
-		</h3>
-		  
-		<div class="project-authors">
-  			<strong>Kyuyeon (Jenny) Rhee</strong>,
-  			<a href="https://tanlekwijit.com/" target="_blank">Tan Lekwijit</a>,
-			<a href="https://search.asu.edu/profile/3518572" target="_blank">Xiao Liu</a>,
-  			<a href="https://search.asu.edu/profile/2217544" target="_blank">Pei-yu Chen</a>
-		</div>
-
-		<p class="project-venue">
-			Presented at WISE 2024 · CHITA 2024
-		</p>
-
-		<div class="project-hint">→</div>
-	  </article>
-
-	  <article 
-	    class="project-card disabled"
-	    tabindex="0"
-	    role="button"
-	    data-topline="Work In Progress"
-	    data-title="Data Regulation and the Microstructure of Clinical Trials"
-	  >
-		  
-	    <div class="project-topline">
-			Work In Progress
-		</div>
-		<h3>
-			Data Regulation and the Microstructure of Clinical Trials
-		</h3>
-
-		<div class="project-authors">
-  			<strong>Kyuyeon (Jenny) Rhee</strong>,
-  			<a href="https://papachristoumarios.github.io/" target="_blank">Marios Papachristou</a>,
-			<a href="https://sites.google.com/view/tianlu/home" target="_blank">Tian Lu</a>,
-  			<a href="https://search.asu.edu/profile/2217544" target="_blank">Pei-yu Chen</a>
-		</div>
-
-		<p class="project-venue">
-			Presenting at INFORMS 2026
-		</p>
-	  </article>
-
-	</div>
-   </section>
-   <hr class="section-divider">
-   <section class="recent-news fade-in" id="news" style="animation-delay: 0.2s;">
-
-
-<!-- News -->
-<section class="news fade-in" id="news" style="animation-delay: 0.1s;">
-  <h2>Recent News</h2>
-
-  <div class="news-wrapper">
-    <div class="news-list news-panel">
-
-      <div class="news-item">
-        <div class="news-date">Nov 2026</div>
-        <div class="news-text">
-          🎤 I will be co-hosting a session on Mindful AI at the
-          <a href="https://meetings.informs.org/wordpress/annual/" target="_blank" rel="noopener noreferrer">
-            INFORMS Annual Meeting
-          </a>.
-        </div>
-      </div>
-		
-      <div class="news-item">
-        <div class="news-date">Aug 2026</div>
-        <div class="news-text">
-          📚 I will be teaching CIS 308 Advanced Excel in Business during Fall 2026 at Arizona State University.
-        </div>
+      <div class="research-badges">
+        <span class="status-badge accepted">Conditionally Accepted at Information Systems Research</span>
       </div>
 
-      <div class="news-item">
-        <div class="news-date">Aug 2026</div>
-        <div class="news-text">
-          📄 I presented my dissertation proposal, <em>"Understanding Digital Technologies in Healthcare: Care Delivery, Service Operations, and Medical Innovation."</em>
-        </div>
+      <p class="research-authors">
+        <strong>Kyuyeon (Jenny) Rhee</strong>,
+        <a href="https://search.asu.edu/profile/3518572" target="_blank">Xiao Liu</a>,
+        <a href="https://tanlekwijit.com/" target="_blank">Tan Lekwijit</a>,
+        <a href="https://search.asu.edu/profile/2217544" target="_blank">Pei-yu Chen</a>
+      </p>
+
+      <div class="research-bottom">
+        <span class="research-venue">
+          WISE 2022 · INFORMS 2023
+        </span>
+
+
+        <button class="abstract-toggle" type="button" aria-expanded="false">
+          Read abstract <span>+</span>
+        </button>
+
       </div>
 
-      <div class="news-item">
-        <div class="news-date">Jul 2026</div>
-        <div class="news-text">
-          🎤 I gave a presentation at the
-          <a href="https://meetings.informs.org/wordpress/healthcare/" target="_blank" rel="noopener noreferrer">
-            INFORMS Healthcare Conference
-          </a>
-			in Raleigh, NC.
-        </div>
+          <div class="abstract-content">
+            <p>
+This study examines how telehealth delivery models are associated with access to care and protocol adherence in underserved populations. While prior research reports mixed evidence on telehealth’s effectiveness, we argue that these inconsistencies arise because telehealth is not a single intervention but implemented through distinct service configurations that address different barriers. Drawing on the theoretical framework of digital economics, we conceptualize telehealth as a technology-mediated service that can alter key economic frictions, including search and verification, transportation, tracking, and setup costs. We focus on two widely adopted models—specialist-facilitated telehealth and remote telehealth—and theorize that each addresses different subsets of these frictions, leading to distinct effects on care access and protocol adherence across settings. Using panel data from U.S. Community Health Centers on mental health services, we document three findings. First, adoption of the specialist-facilitated model is associated with increased access to mental health care, particularly in areas with greater clinical need. Second, remote telehealth is not associated with increased access on average but is associated with higher adherence to standardized depression screening and follow-up protocols. These effects are consistent with improvements in screening and documentation processes rather than increases in utilization. Third, the estimated effects of both models vary across local cost environments. The access effects of specialist-facilitated telehealth are larger in areas where search and verification frictions are greater. In contrast, the effects of remote telehealth are attenuated where patient-side setup costs are high but are larger where transportation barriers and documentation frictions are greater. These findings advance a model-specific perspective on telehealth’s effects, extend the digital economics framework to technology-mediated services, and provide evidence that the estimated effects of digital health interventions vary with how delivery models interact with underlying cost environments. 
+
+            </p>
+          </div>
+
+        </article>
+
+
+    <!-- Paper 2 -->
+    <article class="research-card featured">
+
+      <h3>
+        More Virtual Care, More Pressure? The Impact of Centralized Telehealth Implementation on In-Person Provider Workload
+      </h3>
+
+      <div class="research-badges">
+        <span class="status-badge">Manuscript in Preparation for Management Science</span>
       </div>
 
-      <div class="news-item">
-        <div class="news-date">May 2026</div>
-        <div class="news-text">
-          📚 I taught the
-          <a href="https://docs.google.com/document/d/17JxEjjcWonciHCqz4W6uE7zC8GpWSr_G1X8rMfqsYN0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-            CIS 315 Business Data Analytics
-          </a>
-          course at Arizona State University during Summer 2026.
-        </div>
+      <p class="research-authors">
+        <strong>Kyuyeon (Jenny) Rhee</strong>,
+        <a href="https://tanlekwijit.com/" target="_blank">Tan Lekwijit</a>,
+        <a href="https://search.asu.edu/profile/3518572" target="_blank">Xiao Liu</a>,
+        <a href="https://search.asu.edu/profile/2217544" target="_blank">Pei-yu Chen</a>
+      </p>
+
+      <div class="research-bottom">
+        <span class="research-venue">
+          CIST 2026 · INFORMS Healthcare 2026 · WISE 2024 · CHITA 2024
+        </span>
+
+        <button class="abstract-toggle" type="button" aria-expanded="false">
+          Read abstract <span>+</span>
+        </button>
+
       </div>
 
-      <div class="news-item">
-        <div class="news-date">Apr 2026</div>
-        <div class="news-text">
-          🏅 I received an Honorable Mention for the ASU
-          <a href="https://www.linkedin.com/company/asufwa/" target="_blank" rel="noopener noreferrer">
-            Faculty Women's Association
-          </a>
-          Research Award for Graduate Students.
-        </div>
+      <div class="abstract-content">
+        <p>
+Healthcare organizations are increasingly implementing centralized telehealth programs staffed by dedicated virtual care teams in an effort to alleviate pressure on in-person providers. In practice, however, introducing a virtual care entry point may change how care demand is generated and subsequently channeled to in-person providers. Prior research suggests that telehealth may increase care utilization, yet its operational impact on providers remains unclear, particularly in centralized telehealth settings where in-person providers do not participate in telehealth delivery. We study a large health system that introduced a centralized video visit program for primary care in which dedicated nurse practitioners conduct video visits while primary care providers (PCPs) continue to deliver only in-person care. Leveraging the program's randomized patient eligibility design, we exploit variation in telehealth eligibility within PCPs' patient panels to estimate the effect of telehealth on provider workload along three dimensions: volume, variability, and complexity. We find that greater telehealth eligibility within a PCP's patient panel increases the volume of in-person visits handled by that provider. Telehealth also alters the temporal structure of demand, increasing the frequency with which providers face workloads above their typical capacity and concentrating visits during already busy periods. Finally, telehealth shifts the composition of in-person care toward patients with greater comorbidity burden, although it does not increase visit-level service intensity. These findings show that centralized telehealth can increase both the amount and operational complexity of work faced by in-person providers and highlight the need to account for cross-channel workload spillovers in capacity planning and workforce management.
+
+        </p>
       </div>
 
-      <div class="news-item">
-        <div class="news-date">Apr 2026</div>
-        <div class="news-text">
-          🚀 I launched my academic website.
-        </div>
+    </article>
+
+
+    <!-- Paper 3 -->
+    <article class="research-card jmp">
+
+      <h3>
+        Data Regulation and the Microstructure of Clinical Trials
+      </h3>
+
+      <div class="research-badges">
+        <span class="status-badge jmp-badge">Job Market Paper</span>
+        <span class="status-badge jmp-badge">Preparing for submission to Information Systems Research</span>
+
       </div>
 
-    </div>
+      <p class="research-authors">
+        <strong>Kyuyeon (Jenny) Rhee</strong>,
+        <a href="https://papachristoumarios.github.io/" target="_blank">Marios Papachristou</a>,
+        <a href="https://sites.google.com/view/tianlu/home" target="_blank">Tian Lu</a>,
+        <a href="https://search.asu.edu/profile/2217544" target="_blank">Pei-yu Chen</a>
+      </p>
+
+      <div class="research-bottom">
+        <span class="research-venue">
+          Presenting at INFORMS 2026
+        </span>
+
+        <button class="abstract-toggle" type="button" aria-expanded="false">
+          Read abstract <span>+</span>
+        </button>
+
+      </div>
+
+      <div class="abstract-content">
+        <p>
+Privacy regulation strengthens individuals' control over personal data but can also increase the cost of generating the data on which this scientific evidence depends. While prior research has examined how privacy regulation affects innovative activity, much less is known about how it changes the process through which scientific evidence is produced. We conceptualize trial design as an evidence-generation strategy with required components that satisfy scientific and regulatory objectives and a discretionary margin over which sponsors retain flexibility. This framework predicts that organizations preserve comparatively constrained components of evidence generation while concentrating adjustment within components that offer greater design flexibility. Exploiting cross-sponsor variation in predetermined exposure to the European Union's General Data Protection Regulation (GDPR) among industry-sponsored Phase II clinical trials, we find that privacy regulation leaves planned enrollment and primary endpoints largely unchanged but selectively reduces longitudinal secondary endpoints and shifts the geographic composition of trials away from GDPR-related jurisdictions toward the alternative regions. To examine organizational responses beyond the observed GDPR regime, we develop a structural simulation of sponsors' joint trial design decisions. The simulation shows how informational and geographic adjustments jointly determine regulated data exposure and illustrates how the magnitude and structure of compliance costs can produce disproportionate compositional responses. Our findings identify trial design as an important organizational margin through which privacy regulation reshapes the scientific evidence generated by innovation. This study extends Information Systems research on privacy regulation and data governance by shifting attention from aggregate innovation outcomes to the microstructure of evidence generation, revealing how regulation reshapes the underlying process through which scientific knowledge is produced.%We contribute to the information systems literature by showing that data governance changes organizational evidence generation selectively, affecting the depth and scope of evidence rather than uniformly reducing data-intensive activity.
+
+        </p>
+      </div>
+
+    </article>
+
+    <!-- Paper 4 -->
+
+    <article class="research-card featured">
+
+      <h3>
+        Beyond Nutrition Assistance: Spillover Effects of SNAP Online on Health-Oriented Digital Engagement
+      </h3>
+
+      <div class="research-badges">
+        <span class="status-badge accepted">Data analysis in progress</span>
+      </div>
+
+      <p class="research-authors">
+        <a href="https://xiyanghu.github.io" target="_blank">Xiyang Hu</a>,
+        <strong>Kyuyeon (Jenny) Rhee</strong>,
+        <a href="https://search.asu.edu/profile/3283287" target="_blank">Zenan Zhou</a>,
+        <a href="https://sites.google.com/view/tianlu/home" target="_blank">Tian Lu</a>
+      </p>
+
+        </article>
+
   </div>
 </section>
-	   
+
+<hr class="section-divider">
+
+
+
+<section class="news fade-in" id="news">
+
+  <h2>Recent News</h2>
+
+  <!-- Upcoming -->
+  <div class="news-upcoming">
+    <h3>Upcoming</h3>
+
+    <ul class="news-list">
+
+      <li>
+        <span class="news-date">[Nov. 2026]</span>
+
+        <span class="news-text">
+          I will host a session on Mindful AI and present my job market paper, <em>“Data Regulation and the Microstructure of Clinical Trials,”</em> at the <a href="https://meetings.informs.org/wordpress/annual/" target="_blank" rel="noopener noreferrer"> INFORMS Annual Meeting </a> in San Francisco, CA.
+        </span>
+      </li>
+
+      <li>
+        <span class="news-date">[Oct. 2026]</span>
+
+        <span class="news-text"> I will present my work on centralized telehealth and provider workload at <a href="https://cist2026.github.io" target="_blank" rel="noopener noreferrer"> CIST 2026 </a> in San Francisco, CA.
+        </span>
+      </li>
+
+      <li>
+        <span class="news-date">[Oct. 2026]</span>
+
+        <span class="news-text"> I will participate in the <a href="https://cist2026.github.io/iss-events/#consortium" target="_blank" rel="noopener noreferrer"> INFORMS Information Systems Society Doctoral Consortium </a> in San Francisco, CA.
+        </span>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <!-- 2026 -->
+  <div class="news-year">
+    <h3>2026</h3>
+
+    <ul class="news-list">
+
+      <li>
+        <span class="news-date">[Aug. 2026]</span>
+
+        <span class="news-text"> I will teach <a href="https://docs.google.com/document/d/1AGOR0Mczq6Ezx9ynV7mQ8wzMPBIO70Eun30edevw8bk/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> CIS 308: Advanced Excel in Business </a> at Arizona State University in Fall 2026. </span>
+      </li>
+
+      <li>
+        <span class="news-date">[Aug. 2026]</span>
+
+        <span class="news-text"> I successfully defended my dissertation proposal, <em>“Understanding Digital Technologies in Healthcare: Care Delivery, Service Operations, and Medical Innovation.”</em> </span>
+      </li>
+
+      <li>
+        <span class="news-date">[Jul. 2026]</span>
+
+        <span class="news-text"> I presented my work on centralized telehealth and provider workload at the <a href="https://meetings.informs.org/wordpress/healthcare/" target="_blank" rel="noopener noreferrer"> INFORMS Healthcare Conference </a> in Raleigh, NC. </span>
+      </li>
+
+      <li>
+        <span class="news-date">[May 2026]</span>
+
+        <span class="news-text"> I taught <a href="https://docs.google.com/document/d/17JxEjjcWonciHCqz4W6uE7zC8GpWSr_G1X8rMfqsYN0/edit?tab=t.0" target="_blank" rel="noopener noreferrer"> CIS 315 Business Data Analytics </a> at Arizona State University during Summer 2026.
+        </span>
+      </li>
+
+      <li>
+        <span class="news-date">[Apr. 2026]</span>
+
+        <span class="news-text"> I received an Honorable Mention for the <a href="https://www.linkedin.com/company/asufwa/" target="_blank" rel="noopener noreferrer"> Faculty Women's Association Research Award </a> for Graduate Students, recognizing outstanding graduate student research at ASU. </span>
+      </li>
+
+      <li>
+        <span class="news-date">[Apr. 2026]</span>
+
+        <span class="news-text"> I launched my academic website.
+        </span>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <!-- Invitation -->
+  <p class="news-invitation">
+    I will be attending conferences and presenting my work throughout the 2026–2027 academic job market. If you’ll be at any of these events, please stop by and say hello. I’d be delighted to meet you and chat about research :)
+  </p>
+
+</section>	   
   </div>
 </main>
 
@@ -327,69 +426,21 @@
   </div>
 </footer>
 
-<div class="modal" id="projectModal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
 
-  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button class="modal-close" type="button" data-close>&times;</button>
-
-    <div class="project-topline" id="modalTopline"></div>
-    <h3 id="modalTitle"></h3>
-    <p class="project-desc" id="modalDesc"></p>
-    <p class="project-venue" id="modalVenue"></p>
-    <div class="modal-abstract" id="modalAbstract"></div>
-  </div>
-</div>
 
 
 <script>
-  window.addEventListener("load", () => {
-    window.scrollTo(0, 0);
-  });
+  document.querySelectorAll(".abstract-toggle").forEach((button) => {
+    button.addEventListener("click", () => {
+      const card = button.closest(".research-card");
+      const expanded = card.classList.toggle("expanded");
 
-  const modal = document.getElementById("projectModal");
-  const modalTopline = document.getElementById("modalTopline");
-  const modalTitle = document.getElementById("modalTitle");
-  const modalDesc = document.getElementById("modalDesc");
-  const modalVenue = document.getElementById("modalVenue");
-  const modalAbstract = document.getElementById("modalAbstract");
+      button.firstChild.textContent = expanded
+        ? "Hide abstract "
+        : "Read abstract ";
 
-  function openModal(card) {
-    modalTopline.textContent = card.dataset.topline || "";
-    modalTitle.textContent = card.dataset.title || "";
-    modalDesc.textContent = card.dataset.desc || "";
-    modalVenue.textContent = card.dataset.venue || "";
-    modalAbstract.textContent = card.dataset.abstract || "";
-
-    modal.classList.add("open");
-    document.body.classList.add("modal-open");
-    modal.setAttribute("aria-hidden", "false");
-  }
-
-  function closeModal() {
-    modal.classList.remove("open");
-    document.body.classList.remove("modal-open");
-    modal.setAttribute("aria-hidden", "true");
-  }
-
-  document.querySelectorAll(".project-card:not(.disabled)").forEach((card) => {
-    card.addEventListener("click", () => openModal(card));
-    card.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        openModal(card);
-      }
+      button.setAttribute("aria-expanded", expanded);
     });
-  });
-
-  modal.addEventListener("click", (e) => {
-    if (e.target.hasAttribute("data-close")) closeModal();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && modal.classList.contains("open")) {
-      closeModal();
-    }
   });
 </script>
 
