@@ -9,12 +9,12 @@
 
 
   <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-296NNJGTDM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+    gtag('config', 'G-296NNJGTDM');
   </script>
 
 
@@ -66,49 +66,20 @@
   </style>
 
 
-  <script>
-    function trackEvent(action, label) {
-      if (typeof gtag === "function") {
-        gtag("event", action, {
-          event_category: "CV",
-          event_label: label
-        });
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const openLink = document.getElementById("cv-open");
-      const downloadLink = document.getElementById("cv-download");
-
-      if (openLink) {
-        openLink.addEventListener("click", function () {
-          trackEvent("click_open_cv", "Open PDF");
-        });
-      }
-
-      if (downloadLink) {
-        downloadLink.addEventListener("click", function () {
-          trackEvent("click_download_cv", "Download PDF");
-        });
-      }
-    });
-  </script>
-
-
-
-
-
 
 
 </head>
 
 <body>
+
   <nav>
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">Jenny (Kyuyeon) Rhee</a>
+      <a href="index.html" class="nav-brand">Kyuyeon (Jenny) Rhee</a>
+
       <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
       </ul>
     </div>
   </nav>
@@ -116,10 +87,6 @@
   <main class="cv-container">
     <div class="cv-header">
       <div class="cv-title">Curriculum Vitae</div>
-      <div class="cv-actions">
-        <a href="Rhee_CV.pdf" target="_blank">Open</a>
-        <a href="Rhee_CV.pdf" download>Download</a>
-      </div>
     </div>
 
     <div class="cv-viewer">
