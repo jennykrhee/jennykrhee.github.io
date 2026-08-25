@@ -658,16 +658,11 @@ section {
   margin-right: auto;
 }
 
+
 .about-framework {
   width: 900px;
-  max-width: calc(100vw - 80px);
-
-  margin-top: 48px;
-  margin-bottom: 48px;
-
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  max-width: 100%;
+  margin: 52px auto 48px;
 }
 
 .about-framework img {
