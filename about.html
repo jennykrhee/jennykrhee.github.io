@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About | Kyuyeon (Jenny) Rhee</title>
+
+  <meta
+    name="description"
+    content="About Kyuyeon (Jenny) Rhee, Ph.D. candidate in Information Systems at Arizona State University."
+  />
+
+  <meta name="author" content="Kyuyeon Jenny Rhee" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png" />
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+
+      <a href="index.html" class="nav-brand">
+        Kyuyeon (Jenny) Rhee
+      </a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="about.html" class="active">About</a>
+        </li>
+
+        <li>
+          <a href="cv.html">CV</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- Main Content -->
+  <main class="page-content">
+
+    <div class="container">
+
+      <section class="about-page fade-in">
+
+        <h1>About</h1>
+
+<div class="about-framework">
+  <img
+    src="images/research-framework.png"
+    alt="Research framework illustrating how technological possibilities translate into realized impact through design and implementation, organizational workflows, and regulation and governance."
+  />
+</div>
+
+<hr class="about-divider">
+
+        <div class="about-placeholder">
+
+          <p>
+            I am especially drawn to questions about the gap between what technology makes possible and what people actually experience. Technological progress alone does not guarantee that its benefits will reach the people who need them, and I am interested in understanding what happens in between.
+          </p>
+
+          <p>
+            Healthcare makes this tension particularly visible to me. Despite remarkable advances in medicine and technology, translating those advances into better care remains difficult. New technologies enter a complex system shaped by regulation, organizational constraints, fragmented delivery, stigma, and other barriers that can stand between technological potential and realized benefits. 
+          </p>
+
+          <p>
+            This interest first led me to telehealth, where I began thinking about how the design and implementation of technology shape its real-world effects. It later drew me to questions about data regulation and how the rules governing data can shape innovation itself.
+          </p>
+
+          <p>
+            AI has made this question even more compelling to me. We are watching AI capabilities advance at remarkable speed, but realizing their potential in healthcare requires much more than better models. AI has to enter organizations, fit into clinical workflows, interact with human decision makers, operate under regulation, and earn the trust of the people who use it. 
+          </p>
+
+          <p>
+            My emerging research explores this space: how healthcare organizations implement and monitor AI, how humans interact with increasingly capable AI systems, and how the growing importance of AI changes the way data are generated and governed. I am excited by how many important questions in this area remain open.
+          </p>
+
+          <p>
+            When empirical findings appear mixed or contradictory, I often ask whether the apparent inconsistency comes from how we have defined the technology, outcome, or intervention itself. Rather than treating heterogeneity as something to explain only after estimation, I try to identify the organizational distinctions that may generate it in the first place.
+          </p>
+
+          <p>
+            This perspective runs through my dissertation: I distinguish between telehealth delivery models rather than treating telehealth as a single intervention, examine multiple dimensions of provider workload rather than relying on visit volume alone, and study how privacy regulation changes clinical trial design rather than focusing only on aggregate innovation outcomes.
+          </p>
+
+          <p>
+            Methodologically, I combine causal inference with computational approaches, drawing on large-scale administrative data, natural experiments, simulation, machine learning, and large language models depending on the question.
+          </p>
+        </div>
+
+
+        <hr class="about-divider">
+
+          <section class="about-education">
+            <h2>Education</h2>
+
+            <div class="edu-item">
+              <div class="edu-main">
+                <div class="edu-degree">Ph.D. in Information Systems</div>
+                <div class="edu-school">Arizona State University</div>
+              </div>
+              <div class="edu-year">2027 (expected)</div>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-main">
+                <div class="edu-degree">M.S. in Management Information Systems</div>
+                <div class="edu-school">Seoul National University</div>
+              </div>
+              <div class="edu-year">2020</div>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-main">
+                <div class="edu-degree">B.S. in Business Administration</div>
+                <div class="edu-school">Hanyang University</div>
+              </div>
+              <div class="edu-year">2018</div>
+            </div>
+        
+              </section>
+
+            </div>
+
+          </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+
+      <p>
+        Jenny K. Rhee · W. P. Carey School of Business,
+        Arizona State University ·
+        <a href="mailto:krhee1@asu.edu">
+          krhee1@asu.edu
+        </a>
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- Fade-in animation -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    document.querySelectorAll(".fade-in").forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+
+</html>
