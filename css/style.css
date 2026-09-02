@@ -493,6 +493,14 @@ footer a:hover {
   background: #DDE8F2;
 }
 
+.award-badge {
+  color: #8a6817;
+  background-color: #fbf7e8;
+  border: 1px solid #d6bd72;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
 .research-authors {
   margin: 0;
   font-size: 13.5px;
