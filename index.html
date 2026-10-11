@@ -212,14 +212,15 @@
 
 
         <button class="abstract-toggle" type="button" aria-expanded="false">
-          Read abstract <span>+</span>
+          30-second summary <span>+</span>
         </button>
 
+		  
       </div>
 
           <div class="abstract-content">
             <p>
-This study examines how telehealth delivery models are associated with access to care and protocol adherence in underserved populations. While prior research reports mixed evidence on telehealth’s effectiveness, we argue that these inconsistencies arise because telehealth is not a single intervention but implemented through distinct service configurations that address different barriers. Drawing on the theoretical framework of digital economics, we conceptualize telehealth as a technology-mediated service that can alter key economic frictions, including search and verification, transportation, tracking, and setup costs. We focus on two widely adopted models—specialist-facilitated telehealth and remote telehealth—and theorize that each addresses different subsets of these frictions, leading to distinct effects on care access and protocol adherence across settings. Using panel data from U.S. Community Health Centers on mental health services, we document three findings. First, adoption of the specialist-facilitated model is associated with increased access to mental health care, particularly in areas with greater clinical need. Second, remote telehealth is not associated with increased access on average but is associated with higher adherence to standardized depression screening and follow-up protocols. These effects are consistent with improvements in screening and documentation processes rather than increases in utilization. Third, the estimated effects of both models vary across local cost environments. The access effects of specialist-facilitated telehealth are larger in areas where search and verification frictions are greater. In contrast, the effects of remote telehealth are attenuated where patient-side setup costs are high but are larger where transportation barriers and documentation frictions are greater. These findings advance a model-specific perspective on telehealth’s effects, extend the digital economics framework to technology-mediated services, and provide evidence that the estimated effects of digital health interventions vary with how delivery models interact with underlying cost environments. 
+This study starts from a puzzle: evidence on telehealth’s effectiveness is mixed. I argue that’s because telehealth isn’t a single intervention. I distinguish between two delivery models: one that connects patients at clinics with external specialists, and another that connects patients at home with their providers. The first relaxes search and verification frictions and is associated with greater access to mental health care; the second relaxes transportation and tracking frictions and is associated with better adherence to clinical protocols. So the question is not simply whether telehealth works, but which model works, for whom, and why.
 
             </p>
           </div>
@@ -264,7 +265,7 @@ This study examines how telehealth delivery models are associated with access to
 
       <div class="abstract-content">
         <p>
-Healthcare organizations increasingly deliver virtual care through centralized telehealth programs staffed by dedicated clinicians who are operationally separate from in-person providers. This design is intended to expand access while alleviating pressure on in-person providers, yet its consequences for that workforce remain unclear. Drawing on queueing theory, we examine in-person provider workload along three dimensions: visit volume, temporal variability, and patient complexity. We study a large U.S. health system that made an on-demand primary care telehealth program available to a randomly selected subset of its existing patients. Exploiting this random eligibility, we construct a shift-share instrumental variable for providers' telehealth exposure through their patient panels. We find that greater telehealth exposure increases in-person visit volume, raises within-month variability in demand and the likelihood of above-capacity periods, and shifts the in-person patient mix toward greater comorbidity. Complementary patient-level analyses show that telehealth visits are often followed by near-term in-person care involving both the same and different conditions, with little evidence that diversion to the virtual channel is the dominant response. These findings show that operational separation between virtual and in-person care does not insulate in-person providers from the workload consequences of telehealth. More broadly, they illustrate how adding a service channel can change not only the volume of demand reaching incumbent providers but also its timing and composition. 
+I study a health system that adopted centralized telehealth: a dedicated team provides virtual care, while primary care providers keep seeing patients in person. This design is meant to expand access while shielding in-person providers from additional burden. Whether it does, however, is unclear. For a provider, burden depends not just on how much demand arrives, but on when it arrives and who arrives. Exploiting random eligibility for the program, I find that instead of being shielded, in-person providers see more patients, face more volatile demand, and treat a sicker patient mix. In other words, telehealth doesn’t just take demand away from the clinic. It changes what’s left behind.
         </p>
       </div>
 
@@ -310,7 +311,7 @@ Healthcare organizations increasingly deliver virtual care through centralized t
 
       <div class="abstract-content">
         <p>
-Privacy regulation strengthens individuals' control over personal data but can also increase the cost of generating the data on which scientific evidence depends. While prior research has examined how privacy regulation affects whether and where organizations undertake innovative activity, much less is known about how regulation changes the evidence generated within projects that continue. We conceptualize clinical trial design as an evidence-generation strategy whose components differ in how tightly they are constrained by scientific and regulatory objectives. This framework predicts that organizations preserve more constrained components while concentrating adjustment along more flexible design margins. Exploiting cross-sponsor variation in predetermined exposure to the European Union's General Data Protection Regulation (GDPR) among industry-sponsored Phase II clinical trials, we find no detectable change in planned enrollment or primary endpoints, but find selective reductions in longitudinal secondary endpoints and shifts in trial activity away from GDPR-related jurisdictions toward alternative regions. These changes extend beyond the affected trials: trials conducted by more-exposed sponsors receive fewer subsequent citations, while geographic reallocation shifts trials toward populations sponsors had studied previously, although this pattern largely reflects geographic proximity. We then develop a counterfactual simulation of sponsors' joint informational and geographic design choices to examine responses beyond the observed GDPR regime. The simulation shows that these design choices are interdependent and that stronger fixed-entry or cross-border transfer costs can generate nonlinear and, in some cases, abrupt changes in trial design. Together, our findings identify evidence-generation design as an organizational margin of adaptation to privacy regulation and show how changes within research projects can propagate to the scientific evidence available downstream.
+This paper examines how privacy regulation affects clinical trial design. Clinical trials generate evidence whose value can extend well beyond the sponsoring firm, while sponsors bear the costs of collecting and governing that data. The GDPR increased those costs for trials with European sites. Because European patients are not required for drug approval, sponsors can either comply or bypass, and each option carries a different cost, making the response a business choice rather than a legal mandate. Comparing sponsors with different pre-GDPR exposure to Europe, I find little change in planned enrollment or core measures of trial success, but selective reductions in longer-term and supplementary measures and shifts in trial activity away from GDPR jurisdictions. These changes matter downstream: trials conducted by more-exposed sponsors receive fewer citations from subsequent research, while geographic shifts move trials toward populations sponsors had studied before. The results suggest that firms preserve the components of evidence generation that are more tightly constrained by regulatory requirements, while adjusting more flexible margins.
         </p>
       </div>
 
@@ -472,8 +473,8 @@ Privacy regulation strengthens individuals' control over personal data but can a
       const expanded = card.classList.toggle("expanded");
 
       button.firstChild.textContent = expanded
-        ? "Hide abstract "
-        : "Read abstract ";
+        ? "Hide summary "
+        : "Read summary ";
 
       button.setAttribute("aria-expanded", expanded);
     });
