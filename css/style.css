@@ -578,7 +578,7 @@ footer a:hover {
 }
 
 .news-upcoming h3 {
-  color: var(--color-event-accent);
+  color: var(--color-accent-strong);
   font-weight: 650;
 }
 
@@ -593,7 +593,7 @@ footer a:hover {
 }
 
 .news-upcoming .news-text a {
-  color: var(--color-event-accent);
+  color: var(--color-accent-strong);
   font-weight: 600;
   text-decoration: none;
 }
