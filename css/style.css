@@ -303,26 +303,9 @@ footer a:hover {
 }
 
 /* Responsive */
+/* Responsive */
 @media (max-width: 768px) {
-  
-  .home-layout {
-  grid-template-columns: 1fr;
-  gap: 30px;
-  }
-  
-  .home-photo {
-  align-items: center;
-  }
-  
-  .home-photo img {
-  width: min(260px, 78vw);
-  }
-  
-  .home-main {
-  width: 100%;
-  min-width: 0;
-  }
-  
+
   nav {
     backdrop-filter: blur(6px);
   }
@@ -330,7 +313,7 @@ footer a:hover {
   .nav-inner {
     width: calc(100% - 32px);
     padding: 12px 0;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .nav-brand {
@@ -346,24 +329,28 @@ footer a:hover {
     font-size: 0.95rem;
     line-height: 1.2;
   }
-  .nav-menu-overlay {
-    padding: 12px 16px;
+
+  body {
+    padding-top: 56px;
   }
 
-  .nav-menu-content {
-    padding: 12px 0;
+  /* Home hero */
+  .home-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
-  .home-hero {
-    flex-direction: column;
+
+  .home-photo {
     align-items: center;
   }
 
   .home-photo img {
-    width: 175px;
+    width: min(260px, 78vw);
   }
-  body {
-    padding-top: 56px;
-  }
+
+  .home-main {
+    width: 100%;
+    min-width: 0;
   }
 }
 
