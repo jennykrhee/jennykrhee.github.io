@@ -304,6 +304,25 @@ footer a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+  
+  .home-layout {
+  grid-template-columns: 1fr;
+  gap: 30px;
+  }
+  
+  .home-photo {
+  align-items: center;
+  }
+  
+  .home-photo img {
+  width: min(260px, 78vw);
+  }
+  
+  .home-main {
+  width: 100%;
+  min-width: 0;
+  }
+  
   nav {
     backdrop-filter: blur(6px);
   }
